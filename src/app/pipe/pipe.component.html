@@ -1,0 +1,92 @@
+<p>pipe works!</p>
+
+<div>
+    <p>
+        Current date is {{presentDate | date}}
+    </p>
+</div>
+
+<div>
+    <p>
+        Short date is {{presentDate | date: 'shortDate'}}
+    </p>
+   
+</div>
+
+<div>
+    <p>
+        Full date is {{presentDate | date: 'fullDate'}}
+    </p>
+    
+</div>
+
+<div>
+    <p>
+        Formated date is {{presentDate | date: 'M/dd/yyyy'}}
+    </p>
+</div>
+
+
+<div>
+    <p>
+        Hour and Min is {{presentDate | date: 'h:mm'}}
+    </p>
+</div>
+
+
+<div>
+    <p>
+        Date with UpperCase is {{presentDate | date: 'fullDate' | uppercase}}
+    </p>
+</div>
+
+
+<div>
+    <p>
+        Timing Seconds {{timeChange | async}}
+    </p>
+</div>
+
+<div>
+    <p>
+        Currency {{price | currency: 'EUR'}}
+    </p>
+    <p>
+        Currency {{price | currency: 'INR'}}
+    </p>
+    <p>
+        Currency {{price | currency: 'USD'}}
+    </p>
+</div>
+<div>
+    <p>
+        Start Index: {{customerList | slice: 2}}
+    </p>
+    <p>
+        Start Index and End Index: {{customerList | slice: 1:4}}
+    </p>
+    <p>
+        Start Index and End Index: {{customerList | slice: -2}}
+    </p>
+    <p>
+        Start Index and End Index: {{customerList | slice: -4:-2}}
+    </p>
+</div>
+
+<div>
+    <p>
+        Decimal Pipe: {{decimalOne | number:'3.1'}}
+    </p>
+</div>
+
+<div>
+    <p>
+        JsonData: {{JsonData | json}}
+    </p>
+</div>
+
+<div>
+    <p>
+        Digit: {{digit | digitCount}}
+    </p>
+</div>
